@@ -22,10 +22,9 @@ struct XcodeReporter: Reporter {
         // {full_path_to_file}{:line}{:character}: {error,warning}: {content}
         return [
             "\(abandonnedString.file)",
-            ":\(abandonnedString.line)",
-            ":: ",
+            ":\(abandonnedString.line): ",
             "warning: ",
-            "Unused localized string: \(abandonnedString.identifier)"
+            "Unused resource: \(abandonnedString.identifier)"
             ].joined()
     }
 }

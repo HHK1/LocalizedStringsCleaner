@@ -55,7 +55,7 @@ public struct StringsParser {
             .enumerated().flatMap({ (lineNumber, line) -> LocalizedString? in
                 guard line.hasPrefix(doubleQuote) else { return nil }
                 let identifier = extractStringIdentifierFromTrimmedLine(line)
-                return LocalizedString(file: stringsFile, line: lineNumber, identifier: identifier)
+                return LocalizedString(file: stringsFile, line: lineNumber + 1, identifier: identifier)
             })
     }
     
