@@ -1,5 +1,5 @@
 //
-//  FileFinder.swift
+//  FileAccumulator.swift
 //  LocalizedStringsCleanerCore
 //
 //  Created by Henry on 17/03/2018.

@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "LocalizedStringsCleaner",
+    products: [.executable(name: "localizedcleaner", targets: ["LocalizedStringsCleaner"]),
+               .library(name: "LocalizedStringsCleanerCore", targets: ["LocalizedStringsCleanerCore"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/mac-cain13/R.swift.git", from: "3.0.0"),
     ],
